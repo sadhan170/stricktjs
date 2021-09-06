@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+nav{
+    background-color: #f6f9f9;
+    padding: 25px 0 !important;
+}
+.nav-link {
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .5rem 17px!important;
+    color: #2d3950;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #15a4fa;
+}
+header{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+header .row{
+    min-height: 550px;
+    align-items: center;
+    text-align: center;
+}
+header h1{
+        font-size: 110px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+}
+header p{
+    
+font-size: 18px;
+    
+color: #fff;
+    
+margin-bottom: 25px;
+}
+header span{
+        width: 100%;
+        height: 2px;
+        background-color: #15a4fa;
+        display: block;
+        margin-bottom: 20px;
+}
+header button{
+    border: 2px solid #15a4fa!important;
+    border-radius: 5px !important;
+    background: transparent !important;
+    padding: 8px 30px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+}
+header a{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 49%;
+    transform: translateX(-50%)scale(1.0);
+    -webkit-transform: translateX(-50%)scale(1.0);
+    -moz-transform: translateX(-50%)scale(1.0);
+
+    animation: Move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+   }
+   @keyframes Move{
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 50px;
+    }
+
+   }
+header a:hover{
+    color: #fff;
+}
+
+.about-section{
+    background-color: #f6f9f9;
+    padding: 104px 0;
+    text-align: center;
+}
+.about-section h1{
+    color: #2d3950;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+.about-section p{
+    font-size: 16px;
+    color: #999999;
+}
+
+.service-section{
+    text-align: center;
+    padding: 104px 0;
+}
+.service span{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: rgb(72,186,255); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    line-height: 100px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 1px 5px #504c4c96;
+}
+.service span i{}
+.service h2{
+    color: #2d3950;
+    font-size: 22px;
+    margin-top: 16px;
+}
+.service p{
+    color: #999999;
+    font-size: 14px;
+}
+
+.showcase-section{
+        background: #f6f9f9;
+        text-align: center;
+        padding: 107px 0;
+}
+.showcase-section h1{
+    font-size: 33px;
+    color: #2d3950;
+}
+..showcase-section p{}
+.showcase-section p a{
+    font-size: 15px;
+    color: #909090;
+    text-decoration: none;
+}
+.Showcase{position: relative;margin-bottom: 23px;}
+.Showcase::before{
+    content:"";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #15a4fa;
+    position: absolute;
+    opacity: 0;
+    transition-duration: .4s;
+    transform: scale(.5);
+}
+.Showcase:hover::before{
+    transform: scale(1.0);
+    opacity: 0.7;
+}
+.Showcase img{}
+.Showcase ul{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-40%, 50%);
+    opacity: 0;
+    transition-duration: .4s;
+
+}
+.Showcase:hover ul{
+    opacity: 1;
+    bottom: 40%;
+    transform: translate(-50%, 40%);
+}
+.Showcase ul li{
+    padding: 5px;
+}
+.Showcase ul li a{
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: block;
+    border: 1px solid #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    transition-duration: .4s;
+   
+}
+.Showcase ul li a:hover{
+
+opacity: 0.8;
+}
+
+.contact-section{
+    background-image: url(../images/contract.jpg);
+    
+    overflow: hidden;
+    position: relative;
+}
+.contact-section span{
+}
+.contact-row{
+    min-height: 650px;
+    align-items: center;
+}
+.contact-section h2{
+        font-size: 41px;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+.contact-section p{
+        font-size: 15px;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 0.25px;
+}
+.form-control {
+    background: #3f495d4a;
+    border: 1px solid #999999;
+}
+.subscribe {
+    margin: 0;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+}
+.send-btn {
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    background-color: transparent;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    height: 40px;
+    width: 135px;
+}
+.send-btn:hover {
+    background: #15a4fa;
+}
+
+footer{
+    padding: 25px 0;
+}
+footer p{
+    margin: 0;
+    color: #999999;
+    font-size: 15px;
+}
+footer ul{}
+footer ul li{
+    padding: 5px;
+}
+footer ul li a{
+    height: 42px;
+    width: 42px;
+    background: #15a4fa;
+    color: #fff;
+    display: block;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+
+
+.portfolio-section .portfolio{
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio-section img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.portfolio a{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+}
+#mainNav{}
+#mainNav.navbar-shrink{}
+.nav-link.active{
+    background-color: blue;
+}
